@@ -29,11 +29,19 @@ To test quickly:
    - Use a smaller number to view quicker results.
 2. refresh frontend on browser
 
-### running it locally
+### running it locally (more tedious)
 
+1. first, get the environment variable for assignment 6 and save it in a .env file in the same directory. it should look like
+```
+MONGO_CONNECTION_STRING=<redacted>
+```
+
+2. next, run these commands
 ```bash
 pip3 install -r requirements.txt
 python3 main.py <limit>
 ```
+
+3. refresh frontend on browser
 
 for example, `python3 main.py 10` would reset the database with the first 10 questions from leetcode, excluding leetcode premium questions.
